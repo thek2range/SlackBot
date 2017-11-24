@@ -1,0 +1,11 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Left Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation","Metadata Display Sequence","Version Name","Group Name", "Group Branching Equation", "Group Type", "Section Title", "Custom Info", "Show Validator", "Default Value","Warning message when empty","Screening expression", "Measurement Unit", "Response Set Label", "Medical Dictionary Id", "Rows Columns","Position Row", "Position Col", "Max allowed rows", "Enabled flag", "Randomization", "Enable Survey", "Available on Mobile", "Global Response Set", "Field Width", "Enroll Custom CRF"
+
+"height2","Baseline Data",,"Number Box (Decimal)","Height (cm)",,,,,,"N",,"N","N",,,,,"2.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"weight2","Baseline Data",,"text","Weight (kilograms)",,,,,,"N",,"N","N",,,,,"3.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"bmi2","Baseline Data",,"calc","BMI",,,,,,"N",,"N","N",,,,,"5.0",,,,,"SECTION",,"N","round(([weight2]*10000)/(([height2])^(2)),1)",,,,,,,,,,"Y","N","N","N","Y","N"
+"prealb_b","Baseline Data",,"Number Box (Decimal)","Serum Prealbumin (mg/dL)",,,,,,"N",,"N","N",,,,,"6.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"creat_b","Baseline Data",,"Number Box (Decimal)","Creatinine (mg/dL)",,,,,,"N",,"N","N",,,,,"7.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"npcr_b","Baseline Data",,"Number Box (Decimal)","Normalized Protein Catabolic Rate (g/kg/d)",,,,,,"N",,"N","N",,,,,"8.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"chol_b","Baseline Data",,"Number Box (Decimal)","Cholesterol (mg/dL)",,,,,,"N",,"N","N",,,,,"9.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"transferrin_b","Baseline Data",,"Number Box (Decimal)","Transferrin (mg/dL)",,,,,,"N",,"N","N",,,,,"1.0",,,,,"SECTION",,"N",,,,,,,,,,,"Y","N","N","N","Y","N"
+"baseline_data_complete","Baseline Data",,"select","Complete?","""0, Incomplete | 1, Unverified | 2, Complete  """,,,,,"N",,"N","N",,,,,"4.0",,,,,"SECTION",,"N",,,,,"Complete?",,,,,,"Y","N","N","N","N","N"

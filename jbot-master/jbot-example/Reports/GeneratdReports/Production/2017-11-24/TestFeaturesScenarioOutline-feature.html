@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Html Reports  - Feature: Landing Page Test.</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>The K2 Project</td>
+                          <td>K2 Dev Build</td>
+                        <td>24 Nov 2017, 03:50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Feature Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th>Total</th>
+    <th>Passed</th>
+    <th>Failed</th>
+    <th>Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="missing">Missing</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">Landing Page Test.</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>44</td>
+          <td>44</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="duration" data-value="147114666654">2m 27s 114 ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+       <a href="TestDemoWithOutline.html">@TestDemoWithOutline</a>
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Landing Page Test.</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+          
+  <div class="element">
+    
+    
+<div class="tags indention">
+       <a href="TestDemoWithOutline.html">@TestDemoWithOutline</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-596450213">
+      
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Test Scenario Example.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </span>
+    <div class="description indention"></div>
+
+    <div id="element-596450213" class="collapse collapsable-details ">
+      
+  <div class="inner-level hooks-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-1732261462">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-1732261462" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">stepDefinitions.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">519 ms</span>
+
+          </div>
+
+                      
+
+                  </div>
+          </div>
+  </div>
+
+
+      <div class="steps inner-level">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-546886525">
+          
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+        </div>
+
+        <div id="steps-546886525" class="inner-level collapse collapsable-details ">
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The user Opened the AUT.</span>
+  
+  <span class="lead-duration duration">47s 011 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user hovers on "Banking Link" to go to "Checking for Commercial Banking".</span>
+  
+  <span class="lead-duration duration">21s 566 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Select Your Region" Page.</span>
+  
+  <span class="lead-duration duration">015 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "New York" value from "State" drop down.</span>
+  
+  <span class="lead-duration duration">1s 629 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "New York City" value from "City" drop down.</span>
+  
+  <span class="lead-duration duration">299 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Go" Button.</span>
+  
+  <span class="lead-duration duration">5s 225 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Commercial Checking Account" Page.</span>
+  
+  <span class="lead-duration duration">006 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Get Started Button" Button.</span>
+  
+  <span class="lead-duration duration">10s 367 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Request a call from a Business Banking Specialist" Page.</span>
+  
+  <span class="lead-duration duration">018 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Contact name" as "abcd".</span>
+  
+  <span class="lead-duration duration">680 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Phone Number" as "2126965263".</span>
+  
+  <span class="lead-duration duration">223 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "NY" value from "State" drop down.</span>
+  
+  <span class="lead-duration duration">194 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "E-mail" as "ab@gmail.com".</span>
+  
+  <span class="lead-duration duration">210 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Business name" as "Business1".</span>
+  
+  <span class="lead-duration duration">188 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Year established" as "2017".</span>
+  
+  <span class="lead-duration duration">155 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "Morning" value from "Contact time" drop down.</span>
+  
+  <span class="lead-duration duration">118 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Are you a current TD Bank customer?: Yes" Radio Button.</span>
+  
+  <span class="lead-duration duration">212 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Business Loan or Line of Credit" Radio Button.</span>
+  
+  <span class="lead-duration duration">270 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user scrolls to "Additional Details".</span>
+  
+  <span class="lead-duration duration">124 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Additional Details" as "nothing to say".</span>
+  
+  <span class="lead-duration duration">314 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Send Request Now" Button.</span>
+  
+  <span class="lead-duration duration">3s 085 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Contact a Business Lending Officer - Thank you" Page.</span>
+  
+  <span class="lead-duration duration">013 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                  </div>
+      </div>
+
+      
+  <div class="inner-level hooks-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-1726780304">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-1726780304" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">stepDefinitions.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">6s 524 ms</span>
+
+          </div>
+
+                      
+
+                  </div>
+          </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="element">
+    
+    
+<div class="tags indention">
+       <a href="TestDemoWithOutline.html">@TestDemoWithOutline</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-596450214">
+      
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Test Scenario Example.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </span>
+    <div class="description indention"></div>
+
+    <div id="element-596450214" class="collapse collapsable-details ">
+      
+  <div class="inner-level hooks-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-1445222369">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-1445222369" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">stepDefinitions.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">000 ms</span>
+
+          </div>
+
+                      
+
+                  </div>
+          </div>
+  </div>
+
+
+      <div class="steps inner-level">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-1527906606">
+          
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+        </div>
+
+        <div id="steps-1527906606" class="inner-level collapse collapsable-details ">
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">The user Opened the AUT.</span>
+  
+  <span class="lead-duration duration">24s 343 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user hovers on "Banking Link" to go to "Checking for Commercial Banking".</span>
+  
+  <span class="lead-duration duration">12s 306 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Select Your Region" Page.</span>
+  
+  <span class="lead-duration duration">017 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "New York" value from "State" drop down.</span>
+  
+  <span class="lead-duration duration">195 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "New York City" value from "City" drop down.</span>
+  
+  <span class="lead-duration duration">217 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Go" Button.</span>
+  
+  <span class="lead-duration duration">5s 349 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Commercial Checking Account" Page.</span>
+  
+  <span class="lead-duration duration">020 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Get Started Button" Button.</span>
+  
+  <span class="lead-duration duration">6s 160 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Request a call from a Business Banking Specialist" Page.</span>
+  
+  <span class="lead-duration duration">005 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Contact name" as "abcde".</span>
+  
+  <span class="lead-duration duration">223 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Phone Number" as "2126965263".</span>
+  
+  <span class="lead-duration duration">243 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "NY" value from "State" drop down.</span>
+  
+  <span class="lead-duration duration">180 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "E-mail" as "ab@gmail.com".</span>
+  
+  <span class="lead-duration duration">211 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Business name" as "Business1".</span>
+  
+  <span class="lead-duration duration">190 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Year established" as "2017".</span>
+  
+  <span class="lead-duration duration">165 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user selects "Morning" value from "Contact time" drop down.</span>
+  
+  <span class="lead-duration duration">118 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Are you a current TD Bank customer?: Yes" Radio Button.</span>
+  
+  <span class="lead-duration duration">174 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Business Loan or Line of Credit" Radio Button.</span>
+  
+  <span class="lead-duration duration">238 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user scrolls to "Additional Details".</span>
+  
+  <span class="lead-duration duration">132 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user inputs "Additional Details" as "nothing to say".</span>
+  
+  <span class="lead-duration duration">295 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">The user clicks on "Send Request Now" Button.</span>
+  
+  <span class="lead-duration duration">4s 381 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                      <div class="step">
+              
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The user will reach to "Contact a Business Lending Officer - Thank you" Page.</span>
+  
+  <span class="lead-duration duration">010 ms</span>
+
+  </div>
+
+              
+
+
+              
+              
+
+              
+
+            </div>
+                  </div>
+      </div>
+
+      
+  <div class="inner-level hooks-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-1473143631">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-1473143631" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">stepDefinitions.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">2s 470 ms</span>
+
+          </div>
+
+                      
+
+                  </div>
+          </div>
+  </div>
+
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
